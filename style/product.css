@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none !important;
+}
+
+.header-logo {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.header-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 100px;
+    border: solid 1px rgba(0 0 0 / 20%);
+}
+
+.header-item ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-item-link {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+
+.dropdown-user {
+    border: solid 1px #f3f3f3;
+    position: absolute;
+    top: 40px;
+    right: 6px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 99;
+    background: white;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 5px 5px 0 rgb(50 50 50 / 20%);
+}
+
+.dropdown-user.show {
+    display: flex!important;
+    flex-direction: column-reverse;
+}
+
+.cart-popup {
+    position: absolute;
+    display: none;
+    padding: 30px 20px;
+    top: 40px;
+    right: 0;
+    width: 380px;
+    z-index: 99;
+    border: solid 1px #f3f3f3;
+    background: #fff;
+    box-shadow: 0 5px 5px 0 rgb(50 50 50 / 20%);
+}
+
+.cart-popup.show {
+    display: block;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 70px;
+    height: 90px;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.cart-total {
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-delete {
+    background: none;
+    border: none;
+}
+
+.total-horizontal {
+    width: 200px;
+    border-top: solid 2px #f3f3f3;
+}
+
+.cart-button {
+    margin-bottom: 20px;
+}
+
+.cart-button-link {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background: black;
+    color: #fff!important;
+}
+
+.cart-button-link:last-child {
+    color: #333!important;
+    background: #fff;
+    border: solid 1px #333;
+}
+
+.header-item-link a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+.contents-detail {
+    margin: 50px;
+}
+.product-detail {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+.product-img {
+    width: 450px;
+    height: 570px;
+}
+.product-img img {
+    width: 100%;
+    height: 100%;
+}
+.product-content {
+    width: 40%;
+    padding: 0 30px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #f3f3f3;
+}
+.product-info span:first-child {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.product-info span:last-child {
+    font-size: 1.5em;
+    color: lightsalmon;
+}
+.product-description {
+    margin: 30px 0;
+}
+.cart {
+    padding-bottom: 40px;
+    border-bottom: solid 1px rgb(50 50 50 / 20%);
+}
+.buttons-added {
+    display: flex;
+    align-items: center;
+    border: solid 1px rgba(0 0 0 / 30%);
+    float: left;
+}
+.minus, .plus {
+    background: none;
+    width: 46px;
+    height: 45px;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    line-height: 46px;
+}
+.input-quantity {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    outline: none;
+    font-size: 1.1em;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+}
+.add_to_cart {
+    margin-left: 20px;
+    width: 150px;
+    height: 45px;
+    background: lightsalmon;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.categories {
+    margin: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+.categories span:first-child {
+    font-weight: 500;
+}

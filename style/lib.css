@@ -1,0 +1,20 @@
+.alert {
+    width: 350px;
+    height: 70px;
+    padding: 20px;
+    line-height: 35px;
+
+    text-align: center;
+    color: white;
+    font-size: 1.3em!important;
+    border-radius: 0 5px 5px 0px;
+
+    position: fixed;
+    left: -350px;
+    bottom: 0px;
+
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    z-index: 999;
+}
